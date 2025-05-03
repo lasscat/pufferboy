@@ -1,1 +1,1 @@
-Hi thanks for checkin gthis repo out. I am a beginner in C and this is my first emulator project! Much of this code I presume is pretty bad and if you want to give me some advice please dm me on discord @lasscat!
+Hi thanks for checkin gthis repo out. I am a beginner in C and this is my first emulator project! Much of this code I presume is pretty bad and if you want to give me some advice please dm me on discord @lasscat
