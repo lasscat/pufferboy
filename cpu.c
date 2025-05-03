@@ -144,7 +144,7 @@ void initCPU(Registers *reg){
     reg->e = 0;
     reg->h = 0;
     reg->l = 0;
-    reg->sp = 0;
+    reg->sp = 0xFFFE;
     reg->pc = 0;
     reg->tcycles = 0;
 }
@@ -263,8 +263,8 @@ void cpuStep(Registers *reg){
             break;
 
         case 0x31:
-            uint8_t nlowbyte = memory[reg->pc+1];
-            uint8_t nhighbyte = memory[reg->pc+2];
+            uint8_t nlowbyte = memory[reg->pc];
+            uint8_t nhighbyte = memory[reg->pc+1];
             uint16_t nn = Byteto2(nlowbyte, nhighbyte);
             reg->sp = nn;
             reg->pc += 2;
