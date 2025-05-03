@@ -9,7 +9,7 @@ SRCS = main.c bus.c memory.c romloading.c cpu.c
 OBJS = $(SRCS:.c=.o)
 
 # Output executable name
-EXEC = my_gameboy_emulator
+EXEC = pufferboy
 
 # Default target to build the executable
 $(EXEC): $(OBJS)
